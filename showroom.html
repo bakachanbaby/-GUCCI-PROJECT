@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./css/showroom.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">    <title>ShowRoom</title>
+</head>
+<body>
+    <main id="main-content" class="">
+        <div id="blogStore" class="blogStore-page">
+    <img class="bgimg" src="./images/showroom/86ce9617-e31a-46e7-8ed8-8239d39142ae_aaa04ccd076d41cda779bfe444c60e1b.png">
+        <div class="container">                      
+            <div class="main-content">
+                <div class="mainStore clearfix container-fluid">
+                    <div class="sectionTitleStore">
+                        <h1>
+                            TÌM SHOWROOM
+                        </h1>
+                        <p>
+                            JUNO hiện đang có mặt tại 60 showroom trên toàn quốc. Chọn ngay để biết showroom gần bạn nhất!
+                        </p>
+                    </div>
+                    <div class="sectionContentStore">
+                        <div class="col-xs-12 col-sm-12 no-padding st__container">
+                            <div class="leftCollumStore fixTitleMaps">
+                                <select name="change-tinh" class="change-tinh col-sm-4 col-xs-12" data-store="store">
+                                    <option value="all" data-url="/blogs/he-thong-cua-hang">Chọn tỉnh/thành phố</option>
+                                    <option value="tp-ho-chi-minh" data-url="/blogs/cua-hang-tp-ho-chi-minh">TP. Hồ Chí Minh</option>
+                                    <option value="ha-noi" data-url="/blogs/cua-hang-ha-noi">Hà Nội</option>
+                                    <option value="thai-nguyen" data-url="/blogs/cua-hang-thai-nguyen">Thái Nguyên</option>
+                                    <option value="hai-phong" data-url="/blogs/cua-hang-hai-phong">Hải Phòng</option>
+                                    <option value="thai-binh" data-url="/blogs/cua-hang-thai-binh">Thái Bình</option>
+                                    <option value="thanh-hoa" data-url="/blogs/cua-hang-thanh-hoa">Thanh Hóa</option>
+                                    <option value="nghe-an" data-url="/blogs/cua-hang-nghe-an">Nghệ An</option>
+                                    <option value="quang-ngai" data-url="/blogs/cua-hang-quang-ngai">Quảng Ngãi</option>
+                                    <option value="thua-thien-hue" data-url="/blogs/cua-hang-thua-thien-hue">Thừa Thiên Huế</option>
+                                    <option value="da-nang" data-url="/blogs/cua-hang-da-nang">Đà Nẵng</option>
+                                    <option value="dak-lak" data-url="/blogs/cua-hang-dak-lak">Đak Lak</option>
+                                    <option value="binh-dinh" data-url="/blogs/cua-hang-binh-dinh">Bình Định</option>
+                                    <option value="khanh-hoa" data-url="/blogs/cua-hang-khanh-hoa">Khánh Hòa</option>
+                                    <option value="binh-thuan" data-url="/blogs/cua-hang-binh-thuan">Bình Thuận</option>
+                                    <option value="tay-ninh" data-url="/blogs/cua-hang-tay-ninh">Tây Ninh</option>
+                                    <option value="binh-duong" data-url="/blogs/cua-hang-binh-duong">Bình Dương</option>
+                                    <option value="dong-nai" data-url="/blogs/cua-hang-dong-nai">Đồng Nai</option>
+                                    <option value="ba-ria-vung-tau" data-url="/blogs/cua-hang-ba-ria-vung-tau">Bà Rịa - Vũng Tàu</option>
+                                    <option value="tien-giang" data-url="/blogs/cua-hang-tien-giang">Tiền Giang</option>
+                                    <option value="an-giang" data-url="/blogs/cua-hang-an-giang">An Giang</option>
+                                    <option value="dong-thap" data-url="/blogs/cua-hang-dong-thap">Đồng Tháp</option>
+                                    <option value="kien-giang" data-url="/blogs/cua-hang-kien-giang">Kiên Giang</option>
+                                    <option value="can-tho" data-url="/blogs/cua-hang-can-tho">Cần Thơ</option>
+                                    <option value="ca-mau" data-url="/blogs/cua-hang-ca-mau">Cà Mau</option>
+                                    <option value="vinh-phuc" data-url="/blogs/dai-ly-vinh-phuc">Vĩnh Phúc</option>
+                                    <option value="ninh-thuan" data-url="/blogs/dai-ly-phan-rang">Ninh Thuận</option>
+                                    <option value="quang-tri" data-url="/blogs/dai-ly-quang-tri">Quảng Trị</option>
+                                    <option value="phu-tho" data-url="/blogs/dai-ly-phu-tho">Phú Thọ</option>
+                                    <option value="binh-phuoc" data-url="/blogs/dai-ly-binh-phuoc">Bình Phước</option>
+                                    <option value="bac-giang" data-url="/blogs/dai-ly-bac-giang">Bắc Giang</option>
+                                    <option value="dien-bien" data-url="/blogs/dai-ly-dien-bien">Điện Biên</option>
+                                    <option value="ben-tre" data-url="/blogs/cua-hang-dai-ly-ben-tre">Bến Tre</option>
+                                </select>
+                                <select onchange="filterItemInList2($('.change-huyen'))" name="change-huyen" class="change-huyen activeSelect col-sm-4 col-xs-12" data-store="store">
+                                    <option value="all" data-url="/blogs/he-thong-cua-hang">Chọn quận/huyện</option>         
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        <div class="container-fluid showroom-bt">
+				<hr class="mmm">	
+			<div class="storeIntro">
+				<h4>
+					TRẢI NGHIỆM MUA SẮM TẠI SHOWROOM
+				</h4>
+				<p>
+					Mua sắm trực tiếp tại hệ thống showroom để có những trải nghiệm dịch vụ tốt nhất.
+				</p>
+            </div>
+        </div>
+        <div class="row-img">
+            <div class="column-img">
+                <img class="first" src="./images/showroom/showroom-4-530x300_f6b2e66a4dc441919b6334c6a6c876d6.png" width="100%">   
+                <figcaption>ÔNG GIAN THỜI TRANG VÀ HIỆN ĐẠI</figcaption>
+            </div>
+            <div class="column-img">
+                <img  src="./images/showroom/242495494_2776582152645419_6226563193232566255_n.png" width="100%">
+                <figcaption>MUA SẮM THOẢI MÁI VÀ TIỆN LỢI</figcaption>
+            </div>
+            <div class="column-img">
+                <img  src="./images/showroom/242941090_623006532416457_7150966435110887981_n.png" width="100%">
+                <figcaption>ĐÓN TIẾP ÂN CẦN, TƯ VẤN CHUYÊN NGHIỆP</figcaption>
+            </div>
+            </div>
+					<hr class="mmm">	
+		    </div>
+        </div>
+</body>
+</html>
